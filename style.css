@@ -1,1 +1,175 @@
+:root {
+  --turquesa-claro: #A0E7E5;
+  --turquesa-medio: #00B4D8;
+  --turquesa-oscuro: #0077B6;
+  --blanco: #ffffff;
+  --gris-suave: #f5f5f5;
+}
+
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: var(--gris-suave);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav.volver {
+  background-color: var(--turquesa-medio);
+  text-align: left;
+  padding: 10px 30px;
+}
+
+nav.volver a {
+  color: white;
+  text-decoration: none;
+  background-color: var(--turquesa-oscuro);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+nav.volver a:hover {
+  background-color: #005a87;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  background-color: var(--turquesa-medio);
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+header img.logo {
+  max-width: 120px;
+  border-radius: 8px;
+}
+header p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 18px;
+}
+.boton-donar {
+  display: inline-block;
+  background-color: var(--turquesa-oscuro);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.boton-donar:hover {
+  background-color: #005a87;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+/* SECCIÓN PRODUCTO */
+.producto-info {
+  max-width: 900px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+.titulo {
+  color: var(--turquesa-oscuro);
+  text-align: center;
+  margin-top: 20px;
+}
+.boton-compra {
+  display: inline-block;
+  background-color: var(--turquesa-oscuro);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.boton-compra:hover {
+  background-color: var(--turquesa-medio);
+}
+
+/* CARRUSEL DE IMÁGENES */
+.carrusel {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.santy {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.santy:hover {
+  transform: scale(1.05);
+}
+
+/* GUIA DE PASOS */
+.guia {
+  max-width: 900px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+.guia h3 {
+  color: var(--turquesa-oscuro);
+  margin-top: 25px;
+}
+
+/* GALERÍA DE PROCESO */
+.galeria {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.david {
+  width: 280px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.david:hover {
+  transform: scale(1.08);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--turquesa-oscuro);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+footer img {
+  width: 25px;
+  margin-bottom: 10px;
+}
+footer .derechos {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header p { font-size: 16px; }
+  .producto-info, .guia { padding: 20px; }
+  .santy, .david { width: 90%; }
+  .titulo { font-size: 1.4em; }
+}
 
